@@ -1,12 +1,11 @@
 <template >
   <v-container fluid>
-    <v-card class="tela pa-10 mt-5 mx-auto pt-4"
+    <v-card class="pa-10 mt-5 mx-auto pt-4"
       elevation="8"
       max-width="550"
       rounded="lg"
-      style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;
-      backdrop-filter: blur(2px);
-" 
+      style="position: fixed; top: 50%;
+      left: 50%; transform: translate(-50%, -50%); z-index: 1;" 
          >
       <div class="text-subtitle-1 text-medium-emphasis">
           <v-switch @click="toggleTheme">toggle theme</v-switch>
@@ -99,7 +98,6 @@
 
       Google
     </v-btn>  
-
       <v-card-text class="text-center">
       </v-card-text>
     </v-card>
@@ -118,9 +116,6 @@ import { ref } from 'vue'
   }
 
   const show1 = ref(false)
-  const show2 = ref(true)
-  const password = ref('Password')
-
 let theme = useTheme()
 
 function toggleTheme () {
@@ -136,9 +131,11 @@ function toggleTheme () {
 svg{
   margin-right:10px;
 }
+.v-card{
+  background-color: aqua;
+}
 .v-switch {
-  
-  color: rgb(31, 122, 248);
+  color: rgb(45, 101, 190);
   border-radius: 8px;
   height: 60px;
   position: relative;
